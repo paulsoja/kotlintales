@@ -1,0 +1,7 @@
+baseURL = "https://kotlintales.fun/"
+languageCode = "en-us"
+title = "Kotlin Tales"
+theme = "PaperMod"
+
+[params]
+  description = "Articles on advanced Kotlin, functional programming, and software design."
