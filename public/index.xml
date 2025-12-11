@@ -2,10 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Kotlin Tales</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/kotlintales/</link>
     <description>Recent content on Kotlin Tales</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/kotlintales/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/kotlintales/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/kotlintales/about/</guid>
+      <description>&lt;p&gt;Hi! I&amp;rsquo;m Pavlo, an Android developer writing about Kotlin, architecture,
+functional programming and real-world stories from projects.&lt;/p&gt;
+&lt;p&gt;This blog is called &lt;strong&gt;Kotlin Tales&lt;/strong&gt; because each post is a small story:
+about a bug, a design decision, or a pattern that made the code better.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Subscribe</title>
+      <link>http://localhost:1313/kotlintales/subscribe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/kotlintales/subscribe/</guid>
+      <description>&lt;p&gt;For now you can subscribe via:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;RSS&lt;/strong&gt;: &lt;code&gt;/kotlintales/index.xml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Or follow me on LinkedIn / Telegram (links will be here later).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the future I might add an email newsletter for new Kotlin Tales posts.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

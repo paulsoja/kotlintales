@@ -3,5 +3,46 @@ languageCode = "en-us"
 title = "Kotlin Tales"
 theme = "PaperMod"
 
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+
 [params]
-  description = "Articles on advanced Kotlin, functional programming, and software design."
+description = "Articles on advanced Kotlin, Android development, and software design."
+defaultTheme = "light"
+
+# какие секции считаем основными (для списка статей)
+mainSections = ["posts"]
+
+# блок на главной, как tagline у swiftology
+[params.homeInfoParams]
+Title = "Kotlin Tales"
+Content = "Articles on advanced Kotlin, Android development, functional programming and software design."
+
+# верхнее меню
+[menu]
+
+[[menu.main]]
+identifier = "articles"
+name = "Articles"
+url = "/posts/"
+weight = 1
+
+[[menu.main]]
+identifier = "series"
+name = "Series"
+url = "/series/"
+weight = 2
+
+[[menu.main]]
+identifier = "subscribe"
+name = "Subscribe"
+url = "/subscribe/"
+weight = 3
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 4
