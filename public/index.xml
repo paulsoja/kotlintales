@@ -12,10 +12,10 @@
       <link>http://localhost:1313/kotlintales/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/kotlintales/about/</guid>
-      <description>&lt;p&gt;Hi! I&amp;rsquo;m Pavlo, an Android developer writing about Kotlin, architecture,
-functional programming and real-world stories from projects.&lt;/p&gt;
-&lt;p&gt;This blog is called &lt;strong&gt;Kotlin Tales&lt;/strong&gt; because each post is a small story:
-about a bug, a design decision, or a pattern that made the code better.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hi! 👋 I&amp;rsquo;m Pavlo, an Android developer who enjoys writing Kotlin a bit too much.&lt;/p&gt;
+&lt;p&gt;I’ve been building mobile apps for several years, mostly with &lt;strong&gt;Kotlin&lt;/strong&gt;, &lt;strong&gt;Jetpack Compose&lt;/strong&gt;, and &lt;strong&gt;clean architecture&lt;/strong&gt;.&lt;br&gt;
+Over time I noticed that the most valuable lessons on a project rarely come from “perfect” examples — they come from &lt;strong&gt;weird bugs, ugly legacy code, and design decisions that went wrong&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This is why this blog is called &lt;strong&gt;Kotlin Tales&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Subscribe</title>
