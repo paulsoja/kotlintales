@@ -11,14 +11,7 @@ series = "series"
 [params]
 description = "Articles on advanced Kotlin, Android development, and software design."
 defaultTheme = "light"
-
-# какие секции считаем основными (для списка статей)
 mainSections = ["posts"]
-
-# блок на главной, как tagline у swiftology
-[params.homeInfoParams]
-Title = "Kotlin Tales"
-Content = "Articles on advanced Kotlin, Android development, functional programming and software design."
 
 # верхнее меню
 [menu]

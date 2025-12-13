@@ -4,6 +4,8 @@
   <url>
     <loc>http://localhost:1313/kotlintales/about/</loc>
   </url><url>
+    <loc>http://localhost:1313/kotlintales/posts/</loc>
+  </url><url>
     <loc>http://localhost:1313/kotlintales/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/kotlintales/</loc>

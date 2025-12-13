@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Kotlin Tales</title>
+    <title>Redirect on Kotlin Tales</title>
     <link>http://localhost:1313/kotlintales/</link>
-    <description>Recent content on Kotlin Tales</description>
+    <description>Recent content in Redirect on Kotlin Tales</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/kotlintales/index.xml" rel="self" type="application/rss+xml" />
@@ -16,6 +16,19 @@
 &lt;p&gt;I’ve been building mobile apps for several years, mostly with &lt;strong&gt;Kotlin&lt;/strong&gt;, &lt;strong&gt;Jetpack Compose&lt;/strong&gt;, and &lt;strong&gt;clean architecture&lt;/strong&gt;.&lt;br&gt;
 Over time I noticed that the most valuable lessons on a project rarely come from “perfect” examples — they come from &lt;strong&gt;weird bugs, ugly legacy code, and design decisions that went wrong&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This is why this blog is called &lt;strong&gt;Kotlin Tales&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Series</title>
+      <link>http://localhost:1313/kotlintales/series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/kotlintales/series/</guid>
+      <description>&lt;p&gt;Here I’ll collect long-running &lt;strong&gt;series of posts&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;deep dives into specific Kotlin features;&lt;/li&gt;
+&lt;li&gt;refactoring stories from legacy to cleaner design;&lt;/li&gt;
+&lt;li&gt;step-by-step guides for Android architecture and tooling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Series will appear here later, once there are enough Kotlin tales to group together 🙂&lt;/p&gt;</description>
     </item>
     <item>
       <title>Subscribe</title>
