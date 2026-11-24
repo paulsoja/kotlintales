@@ -4,6 +4,12 @@ title = "Kotlin Tales"
 theme = "PaperMod"
 enableRobotsTXT = true
 
+[outputs]
+home = ["HTML"]
+section = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML"]
+
 [taxonomies]
 tag = "tags"
 category = "categories"
@@ -38,16 +44,10 @@ pageRef = "/series"
 weight = 2
 
 [[languages.en.menus.main]]
-identifier = "subscribe"
-name = "Subscribe"
-pageRef = "/subscribe"
-weight = 3
-
-[[languages.en.menus.main]]
 identifier = "about"
 name = "About"
 pageRef = "/about"
-weight = 4
+weight = 3
 
 [languages.ru]
 locale = "ru"
@@ -70,13 +70,7 @@ pageRef = "/series"
 weight = 2
 
 [[languages.ru.menus.main]]
-identifier = "subscribe"
-name = "Подписка"
-pageRef = "/subscribe"
-weight = 3
-
-[[languages.ru.menus.main]]
 identifier = "about"
 name = "О блоге"
 pageRef = "/about"
-weight = 4
+weight = 3

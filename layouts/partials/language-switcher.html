@@ -1,0 +1,23 @@
+{{- $page := . }}
+{{- $homes := site.Home.AllTranslations }}
+{{- if and (gt (len $homes) 1) (not site.Params.disableLangToggle) }}
+<details class="language-picker">
+    <summary aria-label="{{ i18n "choose_language" }}: {{ .Language.Label }}" title="{{ i18n "choose_language" }}">
+        <span class="language-flag" data-lang="{{ .Lang }}" aria-hidden="true">{{ .Lang | upper }}</span>
+    </summary>
+    <ul>
+        {{- range $homes }}
+        {{- $target := . }}
+        {{- range where $page.AllTranslations "Lang" .Lang }}
+            {{- $target = . }}
+        {{- end }}
+        <li>
+            <a href="{{ $target.RelPermalink }}" lang="{{ .Lang }}" hreflang="{{ .Lang }}"{{ if eq $page.Lang .Lang }} aria-current="true"{{ end }}>
+                <span class="language-flag" data-lang="{{ .Lang }}" aria-hidden="true">{{ .Lang | upper }}</span>
+                {{ .Language.Label | default (.Lang | upper) }}
+            </a>
+        </li>
+        {{- end }}
+    </ul>
+</details>
+{{- end }}

@@ -1,0 +1,47 @@
+{{ define "main" }}
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+</header>
+
+{{ with .Content }}
+<div class="post-content">{{ . }}</div>
+{{ end }}
+
+{{ $paginator := .Paginate .RegularPages.ByPublishDate.Reverse }}
+{{ range $paginator.Pages }}
+<article class="article-list-entry">
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ with .GetTerms "tags" }}
+    <ul class="article-list-tags">
+        {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    <div class="article-list-meta">
+        {{ $date := .PublishDate }}
+        {{ if $date.IsZero }}{{ $date = .Date }}{{ end }}
+        {{ if not $date.IsZero }}
+        <time datetime="{{ $date.Format "2006-01-02" }}">{{ $date | time.Format ":date_medium" }}</time>
+        <span aria-hidden="true">·</span>
+        {{ end }}
+        {{ $minutes := .ReadingTime }}
+        {{ if lt $minutes 1 }}{{ $minutes = 1 }}{{ end }}
+        <span>{{ i18n "read_time" $minutes }}</span>
+    </div>
+</article>
+{{ end }}
+
+{{ if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+    <nav class="pagination">
+        {{ with $paginator.Prev }}
+        <a class="prev" href="{{ .URL }}">« {{ i18n "prev_page" }}</a>
+        {{ end }}
+        {{ with $paginator.Next }}
+        <a class="next" href="{{ .URL }}">{{ i18n "next_page" }} »</a>
+        {{ end }}
+    </nav>
+</footer>
+{{ end }}
+{{ end }}
