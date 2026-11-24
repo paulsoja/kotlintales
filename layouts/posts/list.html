@@ -9,8 +9,9 @@
 
 {{ $paginator := .Paginate .RegularPages.ByPublishDate.Reverse }}
 {{ range $paginator.Pages }}
-<article class="article-list-entry">
-    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+{{ $url := .RelPermalink }}
+<article class="article-list-entry{{ if not $url }} article-list-entry-upcoming{{ end }}">
+    <h2>{{ if $url }}<a href="{{ $url }}">{{ .Title }}</a>{{ else }}{{ .Title }}{{ end }}</h2>
     {{ with .GetTerms "tags" }}
     <ul class="article-list-tags">
         {{ range . }}
@@ -19,6 +20,7 @@
     </ul>
     {{ end }}
     <div class="article-list-meta">
+        {{ if $url }}
         {{ $date := .PublishDate }}
         {{ if $date.IsZero }}{{ $date = .Date }}{{ end }}
         {{ if not $date.IsZero }}
@@ -28,6 +30,9 @@
         {{ $minutes := .ReadingTime }}
         {{ if lt $minutes 1 }}{{ $minutes = 1 }}{{ end }}
         <span>{{ i18n "read_time" $minutes }}</span>
+        {{ else }}
+        <span>soon...</span>
+        {{ end }}
     </div>
 </article>
 {{ end }}

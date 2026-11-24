@@ -1,5 +1,8 @@
 +++
 title = "Error Handling in Kotlin: Explicit Contracts over Hidden Exceptions"
-draft = true
 tags = []
+
+[build]
+list = "local"
+render = "never"
 +++

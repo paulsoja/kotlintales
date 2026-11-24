@@ -1,5 +1,8 @@
 +++
 title = "Why Good Architecture Starts with Domain Modeling"
-draft = true
 tags = []
+
+[build]
+list = "local"
+render = "never"
 +++
