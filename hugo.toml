@@ -14,9 +14,12 @@ defaultTheme = "auto"
 mainSections = ["posts"]
 displayFullLangName = true
 
+[params.author]
+name = "Pavlo Soia"
+
 [languages.en]
-languageCode = "en-US"
-languageName = "English"
+locale = "en-US"
+label = "English"
 weight = 1
 
 [languages.en.params]
@@ -47,8 +50,8 @@ pageRef = "/about"
 weight = 4
 
 [languages.ru]
-languageCode = "ru"
-languageName = "Русский"
+locale = "ru"
+label = "Русский"
 weight = 2
 
 [languages.ru.params]
