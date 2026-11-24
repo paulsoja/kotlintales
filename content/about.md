@@ -1,5 +1,6 @@
 ---
 title: "About Me"
+hideMeta: true
 ---
 
 I'm Pavlo Soia, an Android developer with over 10 years of experience.

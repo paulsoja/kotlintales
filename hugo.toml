@@ -13,15 +13,11 @@ term = ["HTML"]
 [taxonomies]
 tag = "tags"
 category = "categories"
-series = "series"
 
 [params]
 defaultTheme = "auto"
 mainSections = ["posts"]
-displayFullLangName = true
-
-[params.author]
-name = "Pavlo Soia"
+author = "Pavlo Soia"
 
 [languages.en]
 locale = "en-US"
@@ -38,16 +34,10 @@ pageRef = "/posts"
 weight = 1
 
 [[languages.en.menus.main]]
-identifier = "series"
-name = "Series"
-pageRef = "/series"
-weight = 2
-
-[[languages.en.menus.main]]
 identifier = "about"
 name = "About"
 pageRef = "/about"
-weight = 3
+weight = 2
 
 [languages.ru]
 locale = "ru"
@@ -64,13 +54,7 @@ pageRef = "/posts"
 weight = 1
 
 [[languages.ru.menus.main]]
-identifier = "series"
-name = "Циклы статей"
-pageRef = "/series"
-weight = 2
-
-[[languages.ru.menus.main]]
 identifier = "about"
 name = "О блоге"
 pageRef = "/about"
-weight = 3
+weight = 2

@@ -1,5 +1,6 @@
 ---
 title: "Series"
+draft: true
 ---
 
 Here I’ll collect long-running **series of posts**:
