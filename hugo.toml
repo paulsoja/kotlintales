@@ -1,5 +1,5 @@
 baseURL = "https://kotlintales.dev/"
-languageCode = "en-us"
+defaultContentLanguage = "en"
 title = "Kotlin Tales"
 theme = "PaperMod"
 enableRobotsTXT = true
@@ -10,33 +10,70 @@ category = "categories"
 series = "series"
 
 [params]
-description = "Articles on advanced Kotlin, Android development, and software design."
 defaultTheme = "auto"
 mainSections = ["posts"]
+displayFullLangName = true
 
-# верхнее меню
-[menu]
-
-[[menu.main]]
-identifier = "articles"
-name = "Articles"
-url = "/posts/"
+[languages.en]
+languageCode = "en-US"
+languageName = "English"
 weight = 1
 
-[[menu.main]]
+[languages.en.params]
+description = "Articles on advanced Kotlin, Android development, and software design."
+
+[[languages.en.menus.main]]
+identifier = "articles"
+name = "Articles"
+pageRef = "/posts"
+weight = 1
+
+[[languages.en.menus.main]]
 identifier = "series"
 name = "Series"
-url = "/series/"
+pageRef = "/series"
 weight = 2
 
-[[menu.main]]
+[[languages.en.menus.main]]
 identifier = "subscribe"
 name = "Subscribe"
-url = "/subscribe/"
+pageRef = "/subscribe"
 weight = 3
 
-[[menu.main]]
+[[languages.en.menus.main]]
 identifier = "about"
 name = "About"
-url = "/about/"
+pageRef = "/about"
+weight = 4
+
+[languages.ru]
+languageCode = "ru"
+languageName = "Русский"
+weight = 2
+
+[languages.ru.params]
+description = "Статьи о возможностях Kotlin, разработке под Android и проектировании программ."
+
+[[languages.ru.menus.main]]
+identifier = "articles"
+name = "Статьи"
+pageRef = "/posts"
+weight = 1
+
+[[languages.ru.menus.main]]
+identifier = "series"
+name = "Циклы статей"
+pageRef = "/series"
+weight = 2
+
+[[languages.ru.menus.main]]
+identifier = "subscribe"
+name = "Подписка"
+pageRef = "/subscribe"
+weight = 3
+
+[[languages.ru.menus.main]]
+identifier = "about"
+name = "О блоге"
+pageRef = "/about"
 weight = 4
