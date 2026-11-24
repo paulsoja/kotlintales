@@ -1,6 +1,9 @@
 ---
 title: "Циклы статей"
 draft: true
+build:
+  render: never
+  list: never
 ---
 
 Здесь будут выходить циклы статей:

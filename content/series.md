@@ -1,6 +1,9 @@
 ---
 title: "Series"
 draft: true
+build:
+  render: never
+  list: never
 ---
 
 Here I’ll collect long-running **series of posts**:
