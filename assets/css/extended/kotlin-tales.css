@@ -1,0 +1,71 @@
+:root {
+    --main-width: 760px;
+    --radius: 12px;
+    --theme: #fbfaff;
+    --entry: #fff;
+    --primary: #211a32;
+    --secondary: #60586e;
+    --content: #342c43;
+    --border: #e7e0f0;
+    --code-bg: #f2edf8;
+    --accent: #6136b3;
+}
+
+:root[data-theme="dark"] {
+    --theme: #191622;
+    --entry: #221d2e;
+    --primary: #f0ebf8;
+    --secondary: #b9afc9;
+    --content: #ded6eb;
+    --border: #383044;
+    --code-bg: #2b2438;
+    --accent: #c5a7ff;
+}
+
+.list {
+    background: var(--theme);
+}
+
+.header {
+    border-bottom: 1px solid var(--border);
+}
+
+.logo a {
+    color: var(--accent);
+}
+
+#menu .active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.page-header h1,
+.post-title {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+}
+
+.post-content {
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.post-content a {
+    color: var(--accent);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+@media (max-width: 480px) {
+    :root {
+        --gap: 16px;
+    }
+
+    #menu {
+        flex-wrap: wrap;
+        line-height: 2.25;
+    }
+}

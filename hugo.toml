@@ -1,7 +1,8 @@
-baseURL = "https://paulsoja.github.io/kotlintales/"
+baseURL = "https://kotlintales.dev/"
 languageCode = "en-us"
 title = "Kotlin Tales"
 theme = "PaperMod"
+enableRobotsTXT = true
 
 [taxonomies]
 tag = "tags"
@@ -10,7 +11,7 @@ series = "series"
 
 [params]
 description = "Articles on advanced Kotlin, Android development, and software design."
-defaultTheme = "light"
+defaultTheme = "auto"
 mainSections = ["posts"]
 
 # верхнее меню

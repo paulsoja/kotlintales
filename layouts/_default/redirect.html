@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <title>Redirecting…</title>
-    <!-- относительный редирект в раздел posts -->
-    <meta http-equiv="refresh" content="0; url=posts/" />
-    <link rel="canonical" href="posts/" />
+    {{- $articles := site.GetPage "/posts" }}
+    <meta http-equiv="refresh" content="0; url={{ $articles.RelPermalink }}" />
+    <link rel="canonical" href="{{ $articles.Permalink }}" />
 </head>
 <body>
 <p>
     If you are not redirected automatically,
-    <a href="posts/">click here</a>.
+    <a href="{{ $articles.RelPermalink }}">go to Articles</a>.
 </p>
 </body>
 </html>
