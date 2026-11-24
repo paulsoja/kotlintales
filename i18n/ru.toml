@@ -1,2 +1,5 @@
 [choose_language]
 other = "Выбрать язык"
+
+[article_coming_soon]
+other = "скоро..."

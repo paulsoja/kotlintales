@@ -31,7 +31,7 @@
         {{ if lt $minutes 1 }}{{ $minutes = 1 }}{{ end }}
         <span>{{ i18n "read_time" $minutes }}</span>
         {{ else }}
-        <span>soon...</span>
+        <span>{{ i18n "article_coming_soon" }}</span>
         {{ end }}
     </div>
 </article>
